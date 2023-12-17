@@ -15,10 +15,15 @@ Conversation detail page: rendering a conversation with the new structure (type 
 */
 export default function Conversation() {
 	const messages = useMessagesStore((state) => state.messages);
+	
 
 	const { getConversation } = useChatCustom();
 
+	console.log();
+	
+
 	useEffect(() => {
+		
 		getConversation();
 	}, []);
 

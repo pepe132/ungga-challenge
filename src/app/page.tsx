@@ -44,7 +44,7 @@ export default function Chat() {
 
 								{/* Footer */}
 								<div className='mt-2 text-center text-sm'>
-									<span>ChatGPT can make mistakes. Consider checking important information.</span>
+									<span>Ejemplo de cita: Jose Dominguez-23/07/2024-fulanito@gmail.com-5566780494</span>
 								</div>
 								<div className='absolute bottom-2 -right-10 xl:-right-20 z-10'>
 									<HelpButtonComponent />

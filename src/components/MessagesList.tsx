@@ -14,6 +14,8 @@ import { nanoid } from 'nanoid';
 import { TbPencil } from 'react-icons/tb';
 
 const MessagesList = ({ messages }: { messages: Message[] }) => {
+	console.log(messages);
+	
 	const [showIconInUserMessage, setShowIconInUserMessage] = useState(false);
 	const [showFeedbackMessage, setShowFeedbackMessage] = useState(false);
 
@@ -56,13 +58,7 @@ const MessagesList = ({ messages }: { messages: Message[] }) => {
 										<p className='font-semibold text-sm mb-1'>ChatGPT</p>
 										<AssistantMessage
 											contentId={item.id}
-											content={
-												parseItem && Object.keys(parseItem)?.includes('output')
-													? parseItemOutput?.message?.content ?? ''
-													: parseItemMessage
-													? parseItemMessage?.content
-													: 'no readable message'
-											}
+											content={item.content.message}
 											showFeedbackMessage={showFeedbackMessage}
 										/>
 									</div>

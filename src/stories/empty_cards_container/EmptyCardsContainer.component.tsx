@@ -11,8 +11,11 @@ const EmptyCardsContainerComponent = ({ isNewChat }: Props) => {
 	return (
 		<div className='h-full w-full flex flex-col gap-3 lg:mx-auto lg:max-w-2xl xl:max-w-3xl px-2'>
 			<div className={`flex h-full w-full flex-col px-2 pb-2`}>
+		
 				<div className='flex h-full flex-col items-center justify-center'>
+			
 					<div className='mb-3 h-[72px] w-[72px]'>
+					
 						<div className='gizmo-shadow-stroke relative flex h-full items-center justify-center rounded-full  bg-white text-black'>
 							{/* <svg
 								width='41'
@@ -37,7 +40,9 @@ const EmptyCardsContainerComponent = ({ isNewChat }: Props) => {
 					<div className='mb-5 text-2xl font-semibold text-black dark:text-white'>
 						{/* How can I help you today?
 						 */}
-						¿En qué te puedo ayudar?
+						Si deseas realizar una cita ingresa en el siguiente formato la siguiente información<br />
+						<span>nombre y apellido-fecha (dd/mm/AAAA)-correo electronico-telefono (10 digitos)</span>
+						
 					</div>
 				</div>
 			</div>
